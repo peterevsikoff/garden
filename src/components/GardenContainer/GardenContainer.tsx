@@ -7,7 +7,7 @@ const GardenContainer = () => {
             <div className="tree-card">
                 <Tree/>
             </div>
-            
+            План
         </div>
     )
 }
