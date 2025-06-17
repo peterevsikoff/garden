@@ -1,0 +1,22 @@
+@use '../../scss/variables' as *;
+
+.garden-container {
+    max-width: 1170px;
+    height: 900px;
+    border: 1px solid $dark-gray;
+    margin: auto;
+    padding: 16px;
+
+    .tree-card {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
