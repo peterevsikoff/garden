@@ -1,0 +1,48 @@
+@use '../../scss/variables' as *;
+
+.variety-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    z-index: 100;
+    padding: 16px;
+
+    p {
+        text-align: justify;
+    }
+
+    .variety-title {
+        border-bottom: 1px solid $dark-gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+
+        button {
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.variety-container-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($gray-stripped, .5);
+    z-index: 100;
+}
