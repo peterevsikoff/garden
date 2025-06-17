@@ -8,6 +8,7 @@ const GardenContainer = () => {
                 <Tree/>
             </div>
             План
+            план
         </div>
     )
 }
