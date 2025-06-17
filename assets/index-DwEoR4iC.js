@@ -62,4 +62,4 @@ Error generating stack: `+u.message+`
                 -81 -64 -131 -57 -135 6 -3 157 -82 336 -176 l325 -170 1 -126 0 -127 -32 -24\r
                 c-162 -120 -375 -194 -593 -204 -504 -24 -958 301 -1099 787 -114 397 1 818\r
                 302 1101 114 107 233 180 398 242 l72 27 6 67 c18 184 55 314 130 459 210 406\r
-                678 642 1132 568z`})})}),Qd=()=>mt.jsx("div",{className:"garden-container",children:mt.jsx("div",{className:"tree-card",children:mt.jsx(Xd,{})})}),xd=()=>mt.jsx(mt.Fragment,{children:mt.jsx(Qd,{})});Gd.createRoot(document.getElementById("root")).render(mt.jsx(Rd.StrictMode,{children:mt.jsx(xd,{})}));
+                678 642 1132 568z`})})}),Qd=()=>mt.jsxs("div",{className:"garden-container",children:[mt.jsx("div",{className:"tree-card",children:mt.jsx(Xd,{})}),"План"]}),xd=()=>mt.jsx(mt.Fragment,{children:mt.jsx(Qd,{})});Gd.createRoot(document.getElementById("root")).render(mt.jsx(Rd.StrictMode,{children:mt.jsx(xd,{})}));
