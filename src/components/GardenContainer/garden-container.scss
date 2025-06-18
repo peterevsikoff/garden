@@ -1,5 +1,9 @@
 @use '../../scss/variables' as *;
 
+#root {
+     overflow: auto;
+}
+
 .garden-container {
     max-width: 1170px;
     width: 840px;
@@ -8,6 +12,7 @@
     margin: 16px auto;
     padding: 16px;
     position: relative;
+   
 
     .tree-card {
         height: 80px;
