@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { HomeContainer } from "../HomeContainer";
 import { Bush, Tree } from "../media";
 import "./garden-container.scss";
 import { Variety } from "../Variety";
+import { Net } from "../Net";
 
 const GardenContainer = () => {
     const plants = [
@@ -50,6 +51,7 @@ const GardenContainer = () => {
     ];
 
     const [showVariety, setShowVariety] = useState<{description: string, title: string} | null>(null);
+    const container = useRef<HTMLDivElement>(null);
 
     return(
         <>
@@ -57,7 +59,7 @@ const GardenContainer = () => {
                 showVariety &&
                 <Variety description={showVariety.description} title={showVariety.title} setShowVariety={setShowVariety}/>
             }
-            <div className="garden-container">
+            <div ref={container} className="garden-container">
                 {
                     plants.map(x => 
                         <div key={x.id} className="tree-card" style={{top: `${x.top}px`, left: `${x.left}px`}} onClick={() => setShowVariety({description: x.description, title: `${x.type} - ${x.name}`})}>
@@ -72,6 +74,7 @@ const GardenContainer = () => {
                     )
                 }
                 <HomeContainer/>
+                <Net width={container.current?.getBoundingClientRect().width ?? 1170} height={container.current?.getBoundingClientRect().height ?? 1420}/>
             </div>
         </>
     )
