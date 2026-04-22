@@ -29,9 +29,12 @@ const GardenContainer = () => {
         { id: "19", img: <Tree/>, type: "Яблоня", name: "Арнабель", left: "20", top: "200", description: ""},
         { id: "20", img: <Tree/>, type: "Яблоня", name: "Ред фри", left: "110", top: "200", description: ""},
         { id: "21", img: <Tree/>, type: "Яблоня", name: "Елена", left: "200", top: "200", description: ""},
+        { id: "37", img: <Bush/>, type: "Фундук", name: "", left: "290", top: "200", description: ""},
+        { id: "38", img: <Bush/>, type: "Фундук", name: "", left: "380", top: "200", description: ""},
 
         { id: "22", img: <Tree/>, type: "Алыча", name: "Дана", left: "20", top: "290", description: ""},
         { id: "23", img: <Tree/>, type: "Яблоня", name: "Алеся", left: "110", top: "290", description: ""},
+        
 
         { id: "24", img: <Tree/>, type: "Алыча", name: "Сонейка", left: "20", top: "470", description: ""},
         { id: "25", img: <Tree/>, type: "Абрикос", name: "", left: "20", top: "560", description: ""},
@@ -48,6 +51,8 @@ const GardenContainer = () => {
         { id: "35", img: <Bush/>, type: "Смородина", name: "Ненаглядная (красная)", left: "650", top: "20", description: ""},
 
         { id: "36", img: <Bush/>, type: "Малина", name: "Самохвал", left: "740", top: "20", description: ""},
+        { id: "39", img: <Bush/>, type: "Жасмин", name: "", left: "150", top: "920", description: ""},
+        { id: "40", img: <Bush/>, type: "Сирень", name: "Знамя Ленина", left: "240", top: "920", description: ""},
     ];
 
     const [showVariety, setShowVariety] = useState<{description: string, title: string} | null>(null);
